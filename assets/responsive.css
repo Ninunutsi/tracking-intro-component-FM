@@ -1,0 +1,140 @@
+@media(min-width: 767px) and (max-width: 1124px){
+    
+    .bg-grey{
+        height: 35vh;
+    }
+    
+    /* main */
+    
+    main{
+        padding-left: 0;
+        height: unset;
+        flex-direction: column-reverse;
+        margin-top: 7vh;
+        justify-content: center;
+        align-items: center;
+        gap: 7vh;
+    }
+    
+    main img{
+        width: 70%;
+        position:unset;
+
+    }
+    
+    .texts{
+        width: 85%;
+        align-items: center;
+        gap: 18px;
+        text-align: center;
+    }
+    
+    
+    .texts-heading{
+        font-size: 45px;
+        line-height: 50px;
+    }
+    
+    .texts-para{
+        padding-right: 0;
+    }
+    
+    /* gilakebi */
+    
+    .btns{
+        margin-top: 20px;
+    }
+}
+
+@media(max-width:767px){
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px 10vw 0 10vw;
+        position: relative;
+    }
+    
+    .bg-grey{
+        height: 45vh;
+    }
+    
+    .nav{
+        flex-direction: column;
+        background-color: white;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        padding: 15px 25px;
+        width: 80%;
+        right: 10vw;
+        position: absolute;
+        top: 14vh;
+        gap: 12px;
+        z-index: 999;
+        border-radius: 5px;
+    }
+    
+    
+    .nav a{
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .hamburger{
+        display: block;
+    }
+    .grey-circle{
+        width: 80%;
+        height: 1px;
+        background-color: var(--grayshBlue);
+        border-radius: 0;
+        margin: 0 20px;
+    }
+    
+    .login{
+        color: var(--grayshBlue);
+    }
+    
+    /* main */
+    
+    main{
+        display: flex;
+        padding-left: 10vw;
+        align-items: center;
+        justify-content: space-between;
+        gap: 50px;
+        position: relative;
+        overflow-x: hidden;
+        height: 87vh;
+        padding-bottom: 5vh;
+
+        padding-left: 0;
+        height: unset;
+        flex-direction: column-reverse;
+        margin-top: 7vh;
+        justify-content: center;
+        align-items: center;
+        gap: 6vh;
+    
+    }
+    
+    main img{
+        width: 90%;
+        right: 0;
+        position: unset;
+    }
+    
+    .texts{
+        width: 90%;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .texts-heading{
+        font-size: 40px;
+        line-height: 50px;
+    }
+    
+    .texts-para{
+        padding-right: 0;
+    }
+    
+}

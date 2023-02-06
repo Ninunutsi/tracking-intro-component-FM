@@ -1,0 +1,176 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /* font-family: 'Barlow Condensed', sans-serif; */
+}
+
+:root{
+    --dark_blue: hsl(230, 29%, 20%);
+    --dark_graysh_blue: hsl(230, 11%, 40%);
+    --grayshBlue: hsl(231, 7%, 65%);
+    --light-graysh-blue: hsl(207, 33%, 95%);
+    --red: hsl(0, 100%, 68%);
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 10vw 0 10vw;
+    position: relative;
+}
+
+.bg-grey{
+    position: absolute;
+    z-index: -111;
+    width: 50vw;
+    height: 55vh;
+    background-color: var(--light-graysh-blue);
+    right: 0;
+    top: 0;
+    border-bottom-left-radius: 70px;
+}
+
+.nav{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.nav a{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.nav a:hover{
+    transition: 1s;
+    text-decoration: underline;
+}
+
+.nav-link{
+    color: var(--dark_blue);
+}
+
+.grey-circle{
+    width: 6px;
+    height: 6px;
+    background-color: var(--grayshBlue);
+    border-radius: 50%;
+    margin: 0 20px;
+}
+
+.login{
+    color: var(--grayshBlue);
+}
+
+/* main */
+
+main{
+    display: flex;
+    padding-left: 10vw;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    position: relative;
+    overflow-x: hidden;
+    height: 87vh;
+    padding-bottom: 5vh;
+
+}
+
+main img{
+    width: 58%;
+    right: -140px;
+    position: absolute;
+}
+
+.texts{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.new{
+    color: white;
+    background-color: var(--dark_blue);
+    border-radius: 15px;
+    padding: 7px 9px;
+    font-family: 'Barlow Condensed', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.text{
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 3px;
+    font-weight: 400;
+    color: var(--grayshBlue);
+    font-size: 17px;
+    text-transform: uppercase;
+    padding-left: 15px;
+}
+
+.texts-heading{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 60px;
+    color: var(--dark_blue);
+    text-transform: uppercase;
+}
+
+.texts-para{
+    color: var(--dark_graysh_blue);
+    padding-right: 12vw;
+    line-height: 22px;
+}
+
+/* gilakebi */
+
+.btns{
+    margin-top: 25px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.btns button{
+    background-color: var(--red);
+    color: white;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    letter-spacing: 0.8px;
+}
+
+.btns button:hover{
+    transition: 1s;
+    background-color: hsla(0, 100%, 68%, 0.694);
+}
+
+.btns span{
+    color: var(--grayshBlue);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Barlow Condensed', sans-serif;   
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
